@@ -1,107 +1,92 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CS361 ASSIGNMENT 1</title>
-  <!-- Linking Bulma CSS framework -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-  <!-- Linking custom CSS file for additional styling -->
-  <link rel="stylesheet" href="../CSS/dataEntry.css">
-  <!-- Linking Font Awesome for icons -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chabota, Luputa | CS361 ASSINGMENT 1</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="section">
-    <div class="container">
-      <div class="logo">
-        <!-- Logo image -->
-        <img src="../IMAGES/android-contacts.png" alt="">
+  <header>
+  
+       <div class="p-container2"
+    <h1><span style="font-size: 4.5em;">Chabota, Luputa</span><br>
+	 SIN:21 16 21 22</h1>
+    
+	 <p class="tagline">Driven to make technology work for everyone.</p>
+	</div>
+	
+	
+  <div class=" profile-pic"> 
+    <img src="imageom1.jpg" alt="" class="profile-pic">
+	</div>
+	
+  </header>
+  <main>
+          <div class="p-container1">
+    
+	<h2>About Me</h2>
+	</div>
+    <section class="text">
+      <div class="words">
+        <div class="p-container">
+		
+          <p>Fueled by a passion for crafting user-friendly digital experiences that empower everyone, I'm a third-year computer science 
+		  student excitedly exploring the realm of web design. Obsessed with user-centered design and building beautiful, accessible systems, 
+		  I'm driven to break down barriers and make the web a welcoming place for all.</p>
+         
+		 <h3><span style="font-size: 4.5em;"><i>E</i></span>arly Beginnings </h3>
+          <p>Arriving prematurely at seven months, my arrival was deemed a fortunate event. The name "Chabota" means "good" in Tonga, a 
+		  fitting tribute to my early entrance into the world. Growing up in vibrant, sun-soaked Livingstone, where even the sunsets blaze with
+		  optimism, instilled in me an unwavering resilience and a deep love for warm hues, both of which I now pour into my design work.
+		  </p>
+          <p>After completing primary and secondary school in Southern Province, I yearned to travel to a distant place. The Copperbelt, with
+		  its promise of new experiences and challenges, called to me. And as they say, everything works out in time.</p>
+          <p>If I could meet my fifteen-year-old self, I'd offer one piece of advice, borrowed from one of my favorite poets, Oscar Wilde: 
+		  "Be yourself, because everyone else is taken." I'd also urge him to pick up some literature and discover the magic of storytelling.
+		  </p>
+		  </div>
+		  </div>
+		  
+		  
+		          <div class="p-container">
+         <div class="words">
+		   <h3><span style="font-size: 4.5em;"><i>D</i></span>reams & Ambitions </h3>
+          <p>My dreams stretch far and wide, but one vision burns brightest: a future where technology empowers, not divides. 
+		  Imagine a world where everyone, regardless of ability, can navigate the web with ease and unlock its endless possibilities.
+		  That's the world I'm striving to build, one inclusive design at a time. Through honed skills in web development, accessibility, and UX design,
+		  I'm ready to bridge the digital gap and make the web a brighter, more inclusive space for everyone.
+		  </p>
+		  </div>
+        </div>
       </div>
-      <!-- Title of the form -->
-      <h1 class="title">
-        REGISTRATION FORM
-      </h1>
-      <!-- Subtitle with instructions -->
-      <p class="subtitle">
-        <hr>
-        Please register with us<strong> Follow the instructions below:</strong>!
-      </p>
-
-      <div class="inputBoxes">
-        <!-- Form for user registration -->
-        <form name="myform" id="myform" onsubmit="return validate();" method="post" action="process.php">
-          <!-- Name input field -->
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          <br>
-
-          <!-- Password input field -->
-          <label for="password"><br>Password:</label>
-          <input type="password" id="password" name="password" placeholder="Password">
-          <br>
-
-          <!-- Profile picture upload -->
-          <label for="picture"><br>Profile Picture</label>
-          <input type="file" id="picture" name="picture">
-          <br>
-
-          <!-- Gender selection -->
-          <div class="titles">
-            <h2><br>Gender</h2>
-          </div>
-          <label for="male">Male:</label>
-          <input type="radio" id="male" name="gender" value="male" checked>
-          <label for="female">Female:</label>
-          <input type="radio" id="female" name="gender" value="female">
-          <br>
-
-          <!-- Favorite courses selection -->
-          <div class="titles">
-            <h2><br>Favorite courses</h2>
-          </div>
-          <label for="dataStructures">Data Structures</label>
-          <input type="checkbox" id="dataStructures" name="courses[]" value="dataStructures">
-          <br>
-          <label for="java">Java</label>
-          <input type="checkbox" id="java" name="courses[]" value="java">
-          <br>
-          <label for="web-dev">Web Dev</label>
-          <input type="checkbox" id="web-dev" name="courses[]" value="web-dev">
-          <br>
-
-          <!-- City selection -->
-          <div class="titles">
-            <h2><br>City</h2>
-          </div>
-          <label for="school"> </label>
-          <select id="school" name="city">
-            <option value="lusaka">Lusaka</option>
-            <option value="kitwe" selected>Kitwe</option>
-            <option value="ndola">Ndola</option>
-            <option value="livingstone">Livingstone</option>
-            <option value="chipata">Chipata</option>
-          </select>
-          <br>
-
-          <!-- Submit button -->
-          <hr>
-          <br>
-          <button  type="submit" onclick="" >Submit</button>
-
-         <!-- Footer section -->
-<footer >
- <br>
-    <p>
-      © 2024 CS361 Assignment 1 | Designed by Chabota Luputa
-    </p>
-   
-
-</footer>
-
-        </form>
+    </section>
+	
+    <section class="skills">
+      
+      <div class="p-container">
+	  
+	 <h2><span style="font-size: 4.5em;"><i>S</i></span>kills & Talents</h2>
+	 
+         <div class="words">
+		<ul>
+          <li>Scrabble aficionado</li>
+          <li>Web Design & Development (Crafting user-friendly and visually appealing websites!)</li>
+          <li>Creative Writing & Storytelling (Bringing captivating narratives to life on the screen)</li>
+          <li>Beatboxing (Rhythm that'll make your pixels dance!)</li>
+          <li>Baseballer & Basketballer (Team player on and off the court, and on the design team too!)</li>
+          <li>Embedded systems enthusiast</li>
+        </ul>
+		</div>
       </div>
-    </div>
-  </section>
+	  </div>
+	  </div>
+    </section>
+  </main>
+  <footer>
+    <a href="luputachabota911@gmail.com">Let's collaborate!</a>
+    <a href="https://www.facebook.com/chabotaluputa">Connect on Facebook</a>
+  </footer>
 </body>
 </html>
+
